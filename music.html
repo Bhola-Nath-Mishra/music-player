@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        .card{
+            height: 200px;
+            width: 150px;
+            border: 2px solid black;
+        }
+        .musiclist{
+            border: 2px solid khaki;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .navbar{
+            
+        }
+    </style>
+</head>
+<body style="display: inline-flexbox;background-color: black;">
+
+<div style="align-items: center;height: 240px;width:325px;border: 2px solid white;background-color: darkred;">
+<table><tr><td>
+<img src="raat ki rani.png" alt="Raat ki Rani" height="200" width="300"></td></tr>
+<tr><td><audio controls src="Raat Ki Rani_320(PagalWorld.com.so).mp3"></audio>
+</td></tr></table>
+</div>  
+<div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+    <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio>
+      <button onclick="document.getElementById('player').play()">Play</button> 
+      <button onclick="document.getElementById('player').pause()">Pause</button> 
+      <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+      <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+    </div>
+</body>
+</html>

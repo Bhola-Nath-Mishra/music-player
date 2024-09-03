@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        :root {
+            --bg-color: #000;
+            --sec-color: #6a655c;
+        }
+
+        html {
+            scrollbar-color: var(--sec-color) var(--bg-color);
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            height:180px;
+            width: 175px;
+            border: 2px solid cadetblue;
+            border-radius: 10px;
+            background-color: rgb(0, 49, 50);
+
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .card:active{
+            transform: scale(0.95);
+        }
+
+        .outer{
+            border: 4px solid var(--sec-color);
+            border-radius: 10px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+
+        .musicList {
+            /* border: 5px solid var(--sec-color); */
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px;
+            height: 70vh;
+            overflow: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            padding: 20px;
+            background-color: var(--sec-color);
+            color: cadetblue;
+            border-radius: 10px;
+            margin:10px;
+        }
+
+        a:link {
+            color: cadetblue;
+        }
+
+        a:visited {
+            color: cadetblue;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <hr color="cadetblue">
+    <header align="center" style="align-content: center;"><font style="font-family:'Arial Narrow Bold'; font-style: italic;align-content: center;color: cadetblue;font-size: xxx-large; overflow: auto;">BU RECORDS</font>
+    <hr color="cadetblue">
+    <nav>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Songs</a></li>
+        </ul>
+    </nav>
+</header>
+ <hr color="cadetblue">
+   <div class="outer">
+    <div class="musicList">
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+        <div class="card"><img src="raat ki rani.png" alt="Raat ki Rani" height="162" width="175" style="border-radius: 10px;">
+        <audio controls id="player" src="Raat Ki Rani_320(PagalWorld.com.so).mp3" style="height:30px; width: 175px; background-image: url(raat\ ki\ rani.png);border-radius: 10px;"></audio></div>
+    </div>
+   </div>
+</body>
+
+</html>
